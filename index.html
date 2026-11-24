@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mariem Gharieb - Tasks</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --text: #1f2430;
+      --muted: #5b6275;
+      --card: #ffffff;
+      --border: #d9dcea;
+      --accent: #3b4fd8;
+      --accent-text: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14161f;
+        --text: #eceef7;
+        --muted: #a4abc2;
+        --card: #1d2030;
+        --border: #343a52;
+        --accent: #7b8cff;
+        --accent-text: #11131c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    main {
+      width: 100%;
+      max-width: 480px;
+    }
+    h1 { margin: 0 0 6px; font-size: 1.6rem; }
+    p { margin: 0 0 24px; color: var(--muted); }
+    .list { display: grid; gap: 12px; }
+    a.task {
+      display: block;
+      padding: 16px 18px;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+    a.task:hover, a.task:focus-visible {
+      background: var(--accent);
+      color: var(--accent-text);
+      border-color: var(--accent);
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Mariem Mohamed Gharieb</h1>
+    <p>Choose task</p>
+    <div class="list">
+      <!-- المسافة في اسم الفولدر مكتوبة %20 -->
+      <a class="task" href="task%201/index.html">Task 1</a>
+      <a class="task" href="task%202/home.html">Task 2</a>
+      <a class="task" href="Assignment_03_Task3/index_task3.html">Task 3</a>
+    </div>
+  </main>
+</body>
+</html>
